@@ -118,6 +118,13 @@ def albom():
     song1.display_info()
     song2.display_info()
 
+def newButtom():
+    word = input("Напиши что-то: ")
+    print(word)
+
+
+
+
 
 
 root = tk.Tk()
@@ -225,5 +232,18 @@ laba1_labels = tk.Label(laba1_frame, text="", justify=tk.LEFT, fg="blue")
 laba1_labels.pack()
 
 
+
+
+newButtom_frame = tk.Frame(root)
+newButtom_frame .pack()
+
+newButtom = tk.Button(newButtom_frame , text="{word}", command=newButtom)
+newButtom_button.pack()
+
+newButtom_labels = tk.Label(newButtom_frame , text="", justify=tk.LEFT, fg="blue")
+newButtom_labels.pack()
+
+newButtom_label = tk.Label(newButtom_frame, text="Результат:")
+newButtom_label.pack(pady=5)
 
 root.mainloop()
