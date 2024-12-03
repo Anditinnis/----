@@ -155,13 +155,13 @@ file_content_label.pack(pady=10)
 
 
 average_label = tk.Label(root, text="Среднее значение:", justify=tk.LEFT)
-average_label.pack(pady=10)
+average_label.pack()
 
 
 
 
 calc_frame = tk.Frame(root)
-calc_frame.pack(pady=20)
+calc_frame.pack()
 
 calc_label = tk.Label(calc_frame, text="Калькулятор:")
 calc_label.pack()
